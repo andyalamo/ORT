@@ -1,2 +1,7 @@
 ami_id_amazon_linux = "ami-02396cdd13e9a1257"
 ssh_vockey = "vockey"
+vpc_cidr = "172.16.0.0/16"
+private_subnet = "172.16.1.0/24"
+vpc_aws_az = "us-east-1a"
+instance_type_t2 = "t2.micro"
+availability_zone_a1 = "us-east-1a"

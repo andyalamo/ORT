@@ -1,6 +1,7 @@
-resource "aws_security_group" "instance" {
-  name        = "instances_allow_ssh"
+resource "aws_security_group" "practico-terraform-sg" {
+  name        = "test-terraform-sg"
   description = "Allow SSH inbound traffic"
+  vpc_id      = aws_vpc.practico-terraform-vpc.id
 
   ingress {
     description      = "SSH"
@@ -18,7 +19,4 @@ resource "aws_security_group" "instance" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  tags = {
-    Name = "Instances_SSH"
-  }
 }
