@@ -1,0 +1,11 @@
+variable ami {}
+variable instance_type {}
+variable availability_zone {}
+variable subnet_id {}
+variable key_pair_name {}
+variable vpc_security_group_ids {}
+variable connection_type {}
+variable username {}
+variable private_key_file_location {}
+variable inline_commands {}
+variable instance_name {}
