@@ -1,0 +1,5 @@
+FROM ubuntu:20.04
+ENV TZ="America/Montevideo"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && apt-get update -y && apt-get install -y apache2 git curl && apt-get clean -y
+EXPOSE 80
+CMD apachectl -D FOREGROUND
